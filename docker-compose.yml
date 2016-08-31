@@ -1,0 +1,11 @@
+version: '2'
+services:
+  hlds:
+    build:
+      context: .
+    container_name: hlds
+    ports:
+      - ":27015:27015"
+      - ":27015:27015/udp"
+      - ":26900:26900/udp"
+      - ":27020:27020/udp"
