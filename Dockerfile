@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 # install steamcmd dependencies
-RUN apt-get update && apt-get -y install libcurl:i386 lib32gcc1 lib32stdc++6 wget
+RUN apt-get update && apt-get -y install libcurl3 lib32gcc1 lib32stdc++6 wget
 
 # install steamcmd
 RUN mkdir -p /steam/steamcmd
